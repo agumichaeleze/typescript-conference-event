@@ -11,7 +11,7 @@ function Footer() {
           <p className="text-sm text-muted">
             © {new Date().getFullYear()}{" "}
             <span className="font-semibold text-base">
-              Conf<span className="text-accent">2025</span>
+              Conf<span className="text-accent">2026</span>
             </span>
             . All rights reserved.
           </p>
