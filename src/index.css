@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* ===== TEXT ===== */
+    --color-text: 222 47% 11%;        /* gray-900 */
+    --color-text-muted: 220 13% 46%;  /* gray-600 */
+
+    /* ===== BACKGROUND ===== */
+    --color-bg: 0 0% 100%;
+    --color-bg-muted: 210 40% 96%;
+
+    /* ===== PRIMARY (blue-600) ===== */
+    --color-primary: 221 83% 53%;
+    --color-primary-hover: 221 83% 48%;
+    --color-primary-foreground: 0 0% 100%;
+
+    /* ===== ACCENT (yellow-400) ===== */
+    --color-accent: 48 96% 53%;
+    --color-accent-foreground: 222 47% 11%;
+
+    /* ===== NEUTRALS ===== */
+    --color-white: 0 0% 100%;
+    --color-gray-50: 210 40% 98%;
+  }
+
+  .dark {
+    /* ===== TEXT ===== */
+    --color-text: 210 40% 98%;
+    --color-text-muted: 215 20% 65%;
+
+    /* ===== BACKGROUND ===== */
+    --color-bg: 222 47% 11%;          /* gray-900 */
+    --color-bg-muted: 222 40% 15%;
+
+    /* ===== PRIMARY (blue-600 adjusted for dark) ===== */
+    --color-primary: 221 83% 60%;
+    --color-primary-hover: 221 83% 65%;
+    --color-primary-foreground: 0 0% 100%;
+
+    /* ===== ACCENT (yellow-400 softened) ===== */
+    --color-accent: 48 96% 60%;
+    --color-accent-foreground: 222 47% 11%;
+
+    /* ===== NEUTRALS ===== */
+    --color-white: 0 0% 100%;
+   --color-gray-50: 210 40% 98%;
+  }
+
+  body {
+    background-color: hsl(var(--color-bg-muted));
+    color: hsl(var(--color-text));
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  /* ===== TEXT ===== */
+  .text-base {
+    color: hsl(var(--color-text));
+  }
+
+  .text-muted {
+    color: hsl(var(--color-text-muted));
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+
+  /* ===== BACKGROUND ===== */
+  .bg-base {
+    background-color: hsl(var(--color-bg));
+  }
+
+  .bg-muted {
+    background-color: hsl(var(--color-bg-muted));
+  }
+
+  /* ===== PRIMARY ===== */
+  .bg-primary {
+    background-color: hsl(var(--color-primary));
+  }
+
+  .bg-primary-hover:hover {
+    background-color: hsl(var(--color-primary-hover));
+  }
+
+  .text-primary {
+    color: hsl(var(--color-primary));
+  }
+
+  .text-primary-foreground {
+    color: hsl(var(--color-primary-foreground));
+  }
+
+  /* ===== ACCENT ===== */
+  .bg-accent {
+    background-color: hsl(var(--color-accent));
+  }
+
+  .text-accent {
+    color: hsl(var(--color-accent));
+  }
+
+    .text-white {
+    color: hsl(var(--color-white));
+  }
+
+  .bg-white {
+    background-color: hsl(var(--color-white));
+  }
+
+  .text-gray-50 {
+    color: hsl(var(--color-gray-50));
+  }
+
+  .bg-gray-50 {
+    background-color: hsl(var(--color-gray-50));
+  }
+}
