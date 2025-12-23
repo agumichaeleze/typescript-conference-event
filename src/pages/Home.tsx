@@ -17,7 +17,7 @@ export function Home (){
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    Welcome to <span className="text-accent">Conf2025</span>!
+                    Welcome to <span className="text-accent">Conf2026</span>!
                 </motion.h2>
 
                 {/* Description */}

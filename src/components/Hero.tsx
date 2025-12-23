@@ -11,7 +11,7 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        Tech <span className="text-accent">Conference</span> 2025
+        Tech <span className="text-accent">Conference</span> 2026
       </motion.h1>
 
       <motion.p
